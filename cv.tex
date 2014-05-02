@@ -48,7 +48,7 @@
 \familyname{King}
 %\title{ResumÃ© title}                          % optional, remove /
                                 % comment the line if not wanted
-\address{308-655 Broadview Ave}{M4K-2P3 Toronto}    % optional, remove /
+%\address{}{}    % optional, remove /
                                 % comment the line if not wanted
 \mobile{+1~(416)~671~6309}                     % optional, remove /
                                 % comment the line if not wanted
@@ -98,19 +98,23 @@
 %% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Interests and Research}
-\cvitem{}{\emph{Distributed Programming}}
-\cvitem{}{I have been interested in developing programming
-  languages and tools for distributed systems.  My current side
-  project is an implementation of the Bloom programming language in
-  Python.  Bloom is a language for disorderly programming that allows
-  you to build eventually consistent systems with strong consistency 
-  guarantees.}
+\cvitem{}{\emph{Procedural Generation and Cellular Automata}}
+\cvitem{}{I recently gave a talk at Pycon 2014 on procedural generation
+  techniques for 2D tile-based game levels.  I covered binary space
+  partitioning trees, noise functions, cellular automata, and constraint
+  solvers. I also released a library, Horton, which I hope to become a
+  repository of useful data-structures and algorithms for procedural
+  generation in pure Python as a learning resource.}
+\cvitem{}{\emph{Programming Languages}}
+\cvitem{}{I am an active contributor to the Hy language and gave a
+  presentation on it to PyconCA in 2013. I've also undertaking research
+  in distributed programming languages by implementing the BloomL
+  language in Python which I gave a presentation on at PyconCA 2012.}
 \cvitem{}{\emph{Cloud Computing}}
-\cvitem{}{I started contributing to OpenStack on the Nova,
-  Cinder, and Tempest projects.  I am starting to get involved in the
-  discussion around Ceilometer architecture.  I believe that this
-  cloud architecture will have some interesting implications for
-  distributed programs once it reaches a certain level of stability.}
+\cvitem{}{I have been a contributor to the OpenStack Cinder project
+  and have experience deploying OpenStack as well as developing
+  monitoring and administration tools around it. I am presently
+  interested specifically in Swift and ZeroVM.}
 
 \section{Languages}
 \cvitemwithcomment{Python}{Expert}{Able to contribute to core
@@ -123,8 +127,8 @@
 
 \section{Tools}
 \cvdoubleitem{RDBMS}{PostgreSQL, MySQL}{Web Servers}{Apache, Ngninx, Lighttpd}
-\cvdoubleitem{NoSQL}{Redis, Riak, TokyoCabinet}{Web}{Django, Flask, Pylons, Pyramid}
-\cvdoubleitem{Networking}{Twisted, Tornado}{Cloud}{Cinder, Nova,
+\cvdoubleitem{NoSQL}{Redis, Riak}{Web}{Django, Flask, Pylons, Pyramid}
+\cvdoubleitem{Networking}{Twisted, Tornado, eventlet}{Cloud}{Cinder, Nova,
   Tempest}
 
 \section{Talks and Presentations}
@@ -133,9 +137,16 @@ Consistency}
 \cvlistitem{\link{http://bit.ly/TGumDX}}
 \subsection{Hy: A Lisp That Compiles To Python}
 \cvlistitem{\link{http://bit.ly/18ipgc3}}
+\subsection{Castle Anthrax: Dungeon Generation Techniques}
+\cvlistitem{\link{http://bit.ly/1kvPjNT}}
 
 \section{Experience}
 \subsection{Vocational}
+\cventry{2013-2014}{Contract Developer}{SwiftStack}{Remote}{}{Various duties:\newline{}
+\begin{itemize}%
+\item Maintenance, development, and packaging of core Swift web controller
+\item Maintenance, development, and automated deployment of swiftstack.com
+\end{itemize}}
 \cventry{2012}{Senior Developer}{Internap Network
   Services}{Remote}{}{Software developer on the cloud development team
   specializing in Cinder block storage.\newline{}%
@@ -187,7 +198,7 @@ Detailed achievements:%
 \section{Interests}
 \cvitem{Board games}{I'm a huge gaming nerd and I have a collection of
   30+ board games.}
-\cvitem{Rock Climbing}{I'm hoping to hit the Chief in 2013}
+\cvitem{Rock Climbing}{Multi-pitch sport and bouldering}
 \cvitem{Running}{I've ran the Warrior Dash 2011 and Spartan Sprint 2012}
 
 %% \renewcommand{\listitemsymbol}{-~}            % change the symbol for
