@@ -15,13 +15,13 @@
                                 % and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                        % style options are
+\moderncvstyle{classic}                        % style options are
                                 % 'casual' (default), 'classic',
                                 % 'oldstyle' and 'banking'
 \moderncvcolor{blue}                          % color options 'blue'
                                 % (default), 'orange', 'green', 'red',
                                 % 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}    % to set the default
+\renewcommand{\familydefault}{\sfdefault}    % to set the default
 %font; use '\sfdefault' for the default sans serif font, '\rmdefault'
 %for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress
@@ -70,7 +70,7 @@
                                 % (put it to 0pt for no frame) and
                                 % 'picture' is the name of the picture
                                 % file
-\quote{Polymath Provocateur}                            % optional, remove /
+\quote{Software Developer and Polymath Provocateur} % optional, remove /
                                 % comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no
@@ -97,11 +97,10 @@
 %% % arguments 3 to 6 can be left empty
 %% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
-\section{Interests and Research}
-\cvitem{}{\emph{Software Engineering}} \cvitem{}{I am interested in
-  what we can learn from formal methods and how they can be applied to
-  practical software development. I want to explore the universe of
-  functional programming and gain more experience with it.}
+\section{Summary}
+\cvitem{Experience}{Over twenty years in software development, design, leadership and management roles.}
+\cvitem{Technical Skills}{Recent experience in high-volume, critical online transaction processing, distributed systems, and back-end web application architecture in both the control and data plane.}
+\cvitem{Principles}{Writing is thinking. Understanding people and systems is an important focus of my work. Performance and correctness are features worth designing for.}
 
 \section{Languages}
 \cvitemwithcomment{Javascript}{Expert}{Advanced knowledge of data
@@ -124,32 +123,47 @@
 
 \section{Tools}
 \cvdoubleitem{RDBMS}{PostgreSQL, MySQL}{Web Servers}{Ngninx}
-\cvdoubleitem{NoSQL}{Redis}{Web}{Warp, Scotty, Express}
+\cvdoubleitem{NoSQL}{Redis}{Web}{Warp, Yesod, Express}
 \cvdoubleitem{Networking}{eventlet, NodeJS, conduit}{Cloud}{Cinder,
   Nova, Tempest, Swift, Neutron, Astara}
 \cvdoubleitem{Platforms}{Intel x86, x86\_64}{OS}{OSX 10.7+, Windows
   7+, Linux 2.6+}
-\section{Talks and Presentations}
-\subsection{Distributed Programming in Python: A Model for Strong Eventual
-Consistency}
-\cvlistitem{\link{http://bit.ly/TGumDX}}
-\subsection{Hy: A Lisp That Compiles To Python}
-\cvlistitem{\link{http://bit.ly/18ipgc3}}
-\subsection{Castle Anthrax: Dungeon Generation Techniques}
-\cvlistitem{\link{http://bit.ly/1kvPjNT}}
-\subsection{Scaling Python}
-\cvlistitem{\link{https://www.youtube.com/watch?v=oE2YxsHPIfA}}
+%%\section{Talks and Presentations}
+%% \subsection{Distributed Programming in Python: A Model for Strong Eventual
+%% Consistency}
+%% \cvlistitem{\link{http://bit.ly/TGumDX}}
+%% \subsection{Hy: A Lisp That Compiles To Python}
+%% \cvlistitem{\link{http://bit.ly/18ipgc3}}
+%%\subsection{Castle Anthrax: Dungeon Generation Techniques}
+%%cvlistitem{\link{http://bit.ly/1kvPjNT}}
+%% \subsection{Scaling Python}
+%% \cvlistitem{\link{https://www.youtube.com/watch?v=oE2YxsHPIfA}}
 
 \section{Experience}
 \subsection{Vocational}
-\cventry{2016-Present}{Software Engineering Manager}{Weever Apps}{}{}
+\cventry{2020-Present}{Senior Software Developer}{Mercury Technologies}{}{}
+{Various duties:
+  \begin{itemize}%
+  \item Designed, proto-typed, and developed architecture powering
+    millions of card transactions such as event sourcing and event
+    streams
+  \item Developed standards and processes for managing
+    performance-critical, high-availability systems
+  \item Developed several Haskell libraries such as an AWS Kinesis
+    client
+  \item Wrote detailed specifications, reports, and memos to get
+    feedback from colleagues and stakeholders
+  \item Established cross-functional working groups to share knowledge
+    and develop best practices
+\end{itemize}}
+\cventry{2016-2020}{Software Engineering Manager}{Weever Apps}{}{}
 {Various duties:
   \begin{itemize}%
   \item Set standards for coding guidelines, practices, and processes
   \item Managed hiring processes and metrics
   \item Built a data-driven management process and culture
   \item Led the design, specification, and development of core
-    products using Haskell and Javascript
+    products using Javascript and Haskell
   \item Conducted one-on-ones with team members
   \item Instituted a training program and conference budget
   \item Managed up as much as down, working with key stakeholders
@@ -218,7 +232,7 @@ Detailed achievements:%
   30+ board games and table top RPGs.}
 \cvitem{Formal Methods}{I'm a math nerd and spend some of my time
   learning theorem proving techniques.}
-\cvitem{Woodworking}{I also like to carve wood with hand-tools.}
+\cvitem{Sailing}{I recently took up sailing and race weekly in a club.}
 
 %% \renewcommand{\listitemsymbol}{-~}            % change the symbol for
 %%                                 % lists
