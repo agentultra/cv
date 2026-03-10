@@ -1,287 +1,115 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options
-                                % include font size ('10pt', '11pt'
-                                % and '12pt'), paper size ('a4paper',
-                                % 'letterpaper', 'a5paper',
-                                % 'legalpaper', 'executivepaper' and
-                                % 'landscape') and font family ('sans'
-                                % and 'roman')
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
 
-% moderncv themes
-\moderncvstyle{classic}                        % style options are
-                                % 'casual' (default), 'classic',
-                                % 'oldstyle' and 'banking'
-\moderncvcolor{blue}                          % color options 'blue'
-                                % (default), 'orange', 'green', 'red',
-                                % 'purple', 'grey' and 'black'
-\renewcommand{\familydefault}{\sfdefault}    % to set the default
-%font; use '\sfdefault' for the default sans serif font, '\rmdefault'
-%for the default roman one, or any tex font name
-%\nopagenumbers{}                             % uncomment to suppress
-%automatic page numbering for CVs longer than one page
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% character encoding
-%\usepackage[utf8]{inputenc}                  % if you are not using
-%xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                         % if you need to use CJK
-%to typeset your resume in Chinese, Japanese or Korean
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
 
-% adjust the page margins
-\usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3.1cm}           % if you want to change
-%the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic'
-%style, if you want to force the width allocated to your name and
-%avoid line breaks. be careful though, the length is normally
-%calculated to avoid any overlap with your personal info; use this at
-%your own typographical risks...
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
 
-% personal data
-\firstname{James}
-\familyname{King}
-%\title{ResumÃ© title}                          % optional, remove /
-                                % comment the line if not wanted
-%\address{}{}    % optional, remove /
-                                % comment the line if not wanted
-\mobile{+1~(416)~671~6309}                     % optional, remove /
-                                % comment the line if not wanted
-%\phone{+2~(345)~678~901}                      % optional, remove /
-                                % comment the line if not wanted
-%\fax{+3~(456)~789~012}                        % optional, remove /
-                                % comment the line if not wanted
-\email{james@agentultra.com}                          % optional, remove /
-                                % comment the line if not wanted
-\homepage{agentultra.com}                   % optional, remove /
-                                % comment the line if not wanted
-\extrainfo{twitch,mastodon,twitter,github,hn @agentultra}            % optional, remove /
-                                % comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                  % optional, remove /
-                                % comment the line if not wanted;
-                                % '64pt' is the height the picture
-                                % must be resized to, 0.4pt is the
-                                % thickness of the frame around it
-                                % (put it to 0pt for no frame) and
-                                % 'picture' is the name of the picture
-                                % file
-\quote{Backend Software Developer and Polymath Provocateur} % optional, remove /
-                                % comment the line if not wanted
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
 
-% to show numerical labels in the bibliography (default is to show no
-% labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./examples/profile.png}
+\name{James}{King}
+\position{Backend Software Developer}
+\address{Hamilton, ON, Canada}
+
+\mobile{(+1) 416-671-6309}
+%\whatsapp{(+82) 10-9030-1843}
+\email{james@agentultra.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{https://agentultra.com}
+\github{agentultra}
+%\linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \x{x-id}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume
-%in Chinese using CJK
-%-----       resume
-%---------------------------------------------------------
-\makecvtitle
 
-%% \section{Education}
-%% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-%% % arguments 3 to 6 can be left empty
-%% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
 
-\section{Summary}
-\cvitem{Experience}{Back-end, systems level programming, and distributed systems; I maintain and contribute to several open source libraries.}
-\cvitem{Technical Skills}{Recent experience in high-volume, critical card authorization and transaction processing, PCI and SOC2 compliance, distributed systems, and back-end web application architecture in both the control and data plane.}
-\cvitem{Principles}{Writing is thinking. Understanding people and systems is an important focus of my work. Performance and correctness are related and worth designing for. If you write it, you can run it.}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%% \makecvfooter
+%%   {\today}
+%%   {Claud D. Park~~~·~~~Curriculum Vitae}
+%%   {\thepage}
 
-\section{Languages}
 
-\cvitemwithcomment{Javascript}{Expert}{Led the design and development
-  of large scale applications both in NodeJS and in the browser.}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/summary.tex}
+\input{cv/experience.tex}
+\input{cv/projects.tex}
+\input{cv/skills.tex}
+%\input{cv/extracurricular.tex}
+%\input{cv/honors.tex}
+%\input{cv/certificates.tex}
+%\input{cv/presentation.tex}
+%\input{cv/writing.tex}
+%\input{cv/committees.tex}
 
-\cvitemwithcomment{Python}{Expert}{Familiarity with Python 2.5 - 3+, contributed to several large open source projects, familiarity with interpreter internals. Technical reviewer on \emph{Distributed Programming in Python} by Pakt Publishing
-  \link{http://bit.ly/1s0Z7sU}.}
 
-\cvitemwithcomment{Haskell}{Expert}{Have used the language on a 1M+
-  SLOC codebase for 4.5 years. Developed and maintain several open
-  source libraries.}
-
-\cvitemwithcomment{C}{Advanced}{Familiar with C89, C99, and modern tools and
-  practices.}
-
-\cvitemwithcomment{C++}{Adept}{Familiarity with STL, common design
-  patterns and idioms. Contributed WebGL1 Vertex Array Object
-  extension to Mozilla Firefox.}
-
-\section{Technologies}
-\cvdoubleitem{Databases}{PostgreSQL, MySQL, Redis, TigerBeetle}{Web Servers}{Apache, Nginx}
-\cvdoubleitem{Architectures}{CRUD, MVC, Event Sourcing, SOA}{Web}{Warp, Yesod, Express, Django, Flask}
-\cvdoubleitem{Devops}{Terraform, Ansible, OpenTelemetry, Prometheus, Temporal}{Cloud}{EC2, S3, SQS, Kinesis, CW, Lambda, WAF, Route 53, RDS, Aurora}
-\cvdoubleitem{Platforms}{Intel x86, x86\_64}{OS}{OSX 10.7+, Windows
-  7+, Linux 2.6+}
-%%\section{Talks and Presentations}
-%% \subsection{Distributed Programming in Python: A Model for Strong Eventual
-%% Consistency}
-%% \cvlistitem{\link{http://bit.ly/TGumDX}}
-%% \subsection{Hy: A Lisp That Compiles To Python}
-%% \cvlistitem{\link{http://bit.ly/18ipgc3}}
-%%\subsection{Castle Anthrax: Dungeon Generation Techniques}
-%%cvlistitem{\link{http://bit.ly/1kvPjNT}}
-%% \subsection{Scaling Python}
-%% \cvlistitem{\link{https://www.youtube.com/watch?v=oE2YxsHPIfA}}
-
-\newpage
-\section{Experience}
-\cventry{2020-2025}{Senior Software Developer}{Mercury Technologies}{}{}
-{\begin{itemize}%
-  \item Designed and implemented critical, performance-sensitive
-    Online Transaction Processing system for card transactions; one
-    the most profitable sources of revenue for the company.
-  \item Developed Service Level Objectives and response planning for
-    managing performance-critical, high-availability systems leading
-    to reduced downtime and proactive management before issues arise.
-  \item Implemented several Haskell libraries to support developers
-    building on event sourcing and streaming architecture reducing
-    development time and costs.
-  \item Developed internal tools and processes for deploying event
-    streams and integrating data with different product groups and
-    data teams using Terraform, Temporal, Nix, and Haskell libraries.
-  \item Wrote detailed specifications, documentation, reports, and
-    memos to get feedback from colleagues and stakeholders.
-  \item Established cross-functional working groups to share knowledge
-    and develop best practices leading to adoptions of innovations on
-    other teams.
-  \item Demonstrated product and systems thinking by designing tools
-    and systems that included customers, support agents, and
-    developers to reduce escalations of support requests to the
-    engineering team while solving core, recurring customer
-    complaints; increasing company reputation and customer
-    satisfaction.
-\end{itemize}}
-\cventry{2016-2020}{Software Engineering Manager}{Weever Apps}{}{}
-{\begin{itemize}%
-  \item Set standards for coding guidelines, practices, and processes
-    that led to increased reliability and faster time to market.
-  \item Created hiring processes and metrics.
-  \item Built a data-driven management process and culture which drove
-    employee engagement and retention.
-  \item Led the design, specification, and development of core
-    products using primarily Javascript that increased annual
-    recurring revenue.
-  \item Conducted regular one-on-ones with team members.
-  \item Instituted a training program and conference budget which led
-    to several product innovations.
-  \item Managed up as much as down, working with key stakeholders to
-    ensure customer outcomes aligned with our development budget.
-  \item Developed process and culture to manage and reduce error rates
-    which increased customer satisfaction and retention.
-\end{itemize}}
-\cventry{2012-2016}{Open Source Software Consultant}{Various}{Remote}{}{
-\begin{itemize}%
-\item Self-employed as a consultant in long-term engagements with
-  several clients to maintain, develop, and integration Open Stack
-  into on-premises data-centres.
-\item Maintained, developed, and packaged core Openstack components.
-\item Developed key integrations enabling metered billing, invoicing,
-  and observability that drove profits and reduced operational costs.
-\item More history available upon request.
-\end{itemize}}
-
-\section{Interests}
-\cvitem{Board games}{I'm a huge gaming nerd and I have a collection of
-  30+ board games and table top RPGs.}
-\cvitem{Sailing}{I recently took up sailing and race weekly in a club.}
-
-%% \renewcommand{\listitemsymbol}{-~}            % change the symbol for
-%%                                 % lists
-
-%% \section{Extra 2}
-%% \cvlistdoubleitem{Item 1}{Item 4}
-%% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%% \cvlistdoubleitem{Item 3}{}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels:
-%  \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%  to redefine the heading string (``Publications''):
-%  \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                   % 'publications' is the
-                                % name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}              % 'publications' is the
-%name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}              % 'publications' is the
-%name of a BibTeX file
-
-%\clearpage
-%-----       letter
-%---------------------------------------------------------
-% recipient data
-%% \recipient{Company Recruitment team}{Company, Inc.\\123
-%%   somestreet\\some city}
-%% \date{January 01, 1984}
-%% \opening{Dear Sir or Madam,}
-%% \closing{Yours faithfully,}
-%% \enclosure[Attached]{curriculum vit\ae{}}     % use an optional
-%%                                 % argument to use a string other than
-%%                                 % ``Enclosure'', or redefine \enclname
-%% \makelettertitle
-
-%% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-%% ullamcorper neque sit amet lectus facilisis sed luctus nisl
-%% iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra
-%% tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque
-%% vehicula volutpat. Duis tristique justo vel massa fermentum
-%% accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend
-%% ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque
-%% vel massa at felis accumsan rhoncus.
-
-%% Suspendisse commodo, massa eu congue tincidunt, elit mauris
-%% pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam
-%% adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a
-%% accumsan ligula. Class aptent taciti sociosqu ad litora torquent per
-%% conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem
-%% vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna,
-%% ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec
-%% sapien nulla, feugiat eget adipiscing sit amet, lacinia ut
-%% dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam
-%% aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus
-%% varius blandit.
-
-%% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta
-%% risus et sagittis. Ut interdum, enim varius pellentesque tincidunt,
-%% magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus
-%% odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc
-%% sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar
-%% diam venenatis.
-
-%% Albert Einstein discovered that $e=mc^2$ in 1905.
-
-%% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-
-%% \makeletterclosing
-
-%\clearpage\end{CJK*}                         % if you are typesetting
-%your resume in Chinese using CJK; the \clearpage is required for
-%fancyhdr to work correctly with CJK, though it kills the page
-%numbering by making \lastpage undefined
+%-------------------------------------------------------------------------------
 \end{document}
-
-
-%% end of file `template.tex'.
